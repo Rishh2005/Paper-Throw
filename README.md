@@ -32,6 +32,7 @@ Built as a single-file HTML game for quick play in the browser, it is designed f
 ## Project Structure
 
 - `Paper Throw.html` — the complete game with embedded HTML, CSS, and JavaScript
+- `_redirects` — Netlify routing that serves the game at the site homepage
 - `README.md` — project documentation
 
 ## Run Locally
@@ -56,6 +57,7 @@ http://localhost:8000/Paper%20Throw.html
 
 ## Notes
 
+- On Netlify, the site homepage serves `Paper Throw.html` through a rewrite, so visitors can play directly at `/` without a build step.
 - The game stores the best score in browser `localStorage`.
 - Sound is enabled by default and can be toggled from the top-right button.
 - The project is intentionally lightweight and does not depend on any external libraries or frameworks.
